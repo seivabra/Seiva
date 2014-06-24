@@ -24,7 +24,7 @@ public class Item implements Serializable {
 
 	@Id
 	@Column(name = "iditem")
-	private Integer id;
+	private Long id;
 
 	private String inventoryid;
 	private String uritype;

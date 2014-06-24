@@ -50,7 +50,7 @@ public class InstitutionService {
 	public void saveOrUpdate(final Institution institution){
 		
 		try {
-			institutionRepository.save(institution);
+			institutionRepository.saveAndFlush(institution);
 			
 		} catch (Exception e) {
 			logger.error("", e);

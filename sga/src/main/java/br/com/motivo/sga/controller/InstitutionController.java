@@ -23,9 +23,10 @@ public class InstitutionController {
 	@Autowired
 	InstitutionService institutionService;
 	
+	@RequestMapping(value="/create")
 	public ResponseEntity<?> createInstitution(@ModelAttribute("institution") Institution institution){
 		
-		institutionService.createInstitution(institution);
+		institutionService.saveOrUpdate(institution);
 		
 		return null;
 	}
