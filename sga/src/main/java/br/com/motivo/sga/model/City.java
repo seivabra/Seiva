@@ -22,7 +22,7 @@ import javax.persistence.Table;
  * 
  */
 @Entity
-@Table(name = "city")
+//@Table(name = "city")
 public class City implements Serializable {
 
 	@Id
@@ -36,12 +36,12 @@ public class City implements Serializable {
 
 	private Boolean citypublic;
 
-	@OneToMany(fetch = FetchType.LAZY)
-	@JoinColumn(name = "idstate", nullable = false)
-	private List<State> state;
-
-	@OneToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "idinstitution", nullable = true)
-	private Institution institution;
+//	@OneToMany(fetch = FetchType.LAZY)
+//	@JoinColumn(name = "idstate", nullable = false)
+//	private List<State> state;
+//
+//	@OneToOne(fetch = FetchType.LAZY)
+//	@JoinColumn(name = "idinstitution", nullable = true)
+//	private Institution institution;
 
 }

@@ -20,7 +20,7 @@ import javax.persistence.Table;
  * 
  */
 @Entity
-@Table(name = "address")
+//@Table(name = "address")
 public class Address implements Serializable {
 
 	/**
@@ -43,11 +43,11 @@ public class Address implements Serializable {
 
 	private String otherinformation;
 
-	@OneToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "idcity", nullable = false)
-	private City city;
-
-	@OneToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "idcontact", nullable = false)
-	private Contact contact;
+//	@OneToOne(fetch = FetchType.LAZY)
+//	@JoinColumn(name = "idcity", nullable = false)
+//	private City city;
+//
+//	@OneToOne(fetch = FetchType.LAZY)
+//	@JoinColumn(name = "idcontact", nullable = false)
+//	private Contact contact;
 }

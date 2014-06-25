@@ -13,24 +13,24 @@ import br.com.motivo.sga.service.ItemService;
 
 /**
  * @author ferrete
- *
+ * 
  */
 @Controller
-@RequestMapping(value="/protected/item")
+@RequestMapping(value = "/protected/item")
 public class ItemController {
-	
+
 	@Autowired
 	ItemService itemService;
-	
-	@RequestMapping(value="/create")
-	public void createItem(@ModelAttribute("item") Item item){
-		
+
+	@RequestMapping(value = "/create")
+	public void createItem(@ModelAttribute("item") Item item) {
+
 		itemService.createItem(item);
 	}
-	
-	@RequestMapping(value="/delete")
-	public void deleteItem(@ModelAttribute("item") Item item){
-		
+
+	@RequestMapping(value = "/delete")
+	public void deleteItem(@ModelAttribute("item") Item item) {
+
 		itemService.deleteItem(item);
 	}
 

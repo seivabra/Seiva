@@ -15,7 +15,5 @@ import br.com.motivo.sga.model.Item;
  */
 public interface ItemRepository extends JpaRepository<Item, Long>{
 	
-	@Query(value=":cod or ")
-	public Item findItemByQueryParam(@Param("cod") String cod);
 
 }

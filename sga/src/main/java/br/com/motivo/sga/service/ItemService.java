@@ -11,21 +11,21 @@ import br.com.motivo.sga.repository.ItemRepository;
 
 /**
  * @author ferrete
- *
+ * 
  */
 @Service
 public class ItemService {
-	
+
 	@Autowired
 	ItemRepository itemRepository;
-	
+
 	public void createItem(final Item item) {
-		
+
 		itemRepository.save(item);
 	}
-	
+
 	public void deleteItem(final Item item) {
-		
+
 		itemRepository.delete(item);
 	}
 
